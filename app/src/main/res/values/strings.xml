@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="logo_desctrption">Logo</string>
+    <string name="menu_Exercice">Exercices</string>
+    <string name="font_poetsenOne">Poetsen One</string>
+    <string name="menu_parametre">Paramètres</string>
+    <string name="menu_cours">Cours</string>
+</resources>
