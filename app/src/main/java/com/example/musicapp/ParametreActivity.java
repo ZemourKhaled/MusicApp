@@ -22,10 +22,11 @@ public class ParametreActivity extends AppCompatActivity {
     private String[] noms_intervalles;
     public static boolean[] selection_intervalles;
 
-    //todo load onquit
     //todo nettoyer code
     //todo revoir interface
     //todo ajouter bouton instrument
+    //todo charger pref séparées + fonction qui les appelle toutes
+    //todo cocher à l'avance les cases
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,6 +88,7 @@ public class ParametreActivity extends AppCompatActivity {
             }
             editor.apply();
         }
+        ParametreActivity.charger_preferences(this);
     }
 
     public static void charger_preferences (Context context) {
@@ -94,7 +96,7 @@ public class ParametreActivity extends AppCompatActivity {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         ParametreActivity.selection_intervalles = new boolean[noms_intervalles.length];
         for (int ind=0;ind<selection_intervalles.length;ind++){
-            selection_intervalles[ind] = preferences.getBoolean(noms_intervalles[ind],false);
+            selection_intervalles[ind] = preferences.getBoolean(noms_intervalles[ind],true);
         }
     }
 }
