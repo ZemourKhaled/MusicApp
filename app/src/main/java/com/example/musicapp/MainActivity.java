@@ -34,17 +34,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }, SPLASH_TIME_OUT);
 
-        //test
-        CharSequence[] noms_intervalles = getResources().getStringArray(R.array.noms_intervalles);
-        CharSequence texte;
-        Toast toast;
-        for (int ind=0;ind<ParametreActivity.selection_intervalles.length;ind++){
-            if (ParametreActivity.selection_intervalles[ind]){
-                texte=noms_intervalles[ind];
-                toast=Toast.makeText(this,texte,Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        }
     }
 
     public void btn_menu_exercice(View view){
