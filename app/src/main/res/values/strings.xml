@@ -5,4 +5,24 @@
     <string name="font_poetsenOne">Poetsen One</string>
     <string name="menu_parametre">Paramètres</string>
     <string name="menu_cours">Cours</string>
+    <string name="parametres_intervals">Sélection d\'intervalles</string>
+    <string name="Dérouler">Dérouler</string>
+    <string name="parametres_save">Sauvegarder</string>
+    <string name="erreur_selection_parametres">Vous avez sélectionné moins de deux intervalles.</string>
+    <string-array
+        name="noms_intervalles">
+        <item>unisson</item>
+        <item>seconde mineure</item>
+        <item>seconde majeure</item>
+        <item>tierce mineure</item>
+        <item>tierce majeure</item>
+        <item>quarte juste</item>
+        <item>quinte diminuée</item>
+        <item>quinte juste</item>
+        <item>sixte mineure</item>
+        <item>sixte majeure</item>
+        <item>septième mineure</item>
+        <item>septième majeure</item>
+        <item>octave</item>
+    </string-array>
 </resources>

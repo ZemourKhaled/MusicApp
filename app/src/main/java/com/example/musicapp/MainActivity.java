@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        ParametreActivity.charger_preferences(this);
         final LinearLayout menu_mainActivity = findViewById(R.id.Menu_mainActivity);
 
         //Thread
@@ -32,6 +33,18 @@ public class MainActivity extends AppCompatActivity {
                 menu_mainActivity.setVisibility(View.VISIBLE);
             }
         }, SPLASH_TIME_OUT);
+
+        //test
+        CharSequence[] noms_intervalles = getResources().getStringArray(R.array.noms_intervalles);
+        CharSequence texte;
+        Toast toast;
+        for (int ind=0;ind<ParametreActivity.selection_intervalles.length;ind++){
+            if (ParametreActivity.selection_intervalles[ind]){
+                texte=noms_intervalles[ind];
+                toast=Toast.makeText(this,texte,Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        }
     }
 
     public void btn_menu_exercice(View view){
