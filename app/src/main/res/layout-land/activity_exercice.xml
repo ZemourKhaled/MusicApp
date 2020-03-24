@@ -26,12 +26,15 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@color/grey"
-                    app:cardCornerRadius="35dp">
+                    app:cardCornerRadius="35dp"
+                    android:onClick="playButton">
 
                     <ImageView
+                        android:id="@+id/image_play_button"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/ic_play_arrow_black_24dp" />
+                        android:src="@drawable/ic_play_arrow_black_24dp"
+                        android:contentDescription="@string/PlayButton"/>
 
                 </androidx.cardview.widget.CardView>
 
@@ -54,7 +57,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/poetsen_one"
-                            android:text="Question !"
+                            android:text="@string/question"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -65,7 +68,7 @@
                             android:layout_margin="10dp"
                             android:fontFamily="@font/poetsen_one"
                             android:gravity="center"
-                            android:text="Combien  demi temps existe entre les 2 sons"
+                            android:text="@string/question_exercice"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -84,20 +87,23 @@
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/card0"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
                         android:background="@color/grey"
-                        app:cardCornerRadius="20dp">
+                        app:cardCornerRadius="20dp"
+                        android:onClick="reponseButton">
 
                         <TextView
+                            android:id="@+id/reponse0"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="@font/poetsen_one"
-                            android:text="rep1"
+                            android:gravity="center"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -106,20 +112,23 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/card1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
                         android:background="@color/grey"
-                        app:cardCornerRadius="20dp">
+                        app:cardCornerRadius="20dp"
+                        android:onClick="reponseButton">
 
                         <TextView
+                            android:id="@+id/reponse1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="@font/poetsen_one"
-                            android:text="rep2"
+                            android:gravity="center"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -128,20 +137,23 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/card2"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
                         android:background="@color/grey"
-                        app:cardCornerRadius="20dp">
+                        app:cardCornerRadius="20dp"
+                        android:onClick="reponseButton">
 
                         <TextView
+                            android:id="@+id/reponse2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="@font/poetsen_one"
-                            android:text="rep3"
+                            android:gravity="center"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -161,20 +173,23 @@
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/card3"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
                         android:background="@color/grey"
-                        app:cardCornerRadius="20dp">
+                        app:cardCornerRadius="20dp"
+                        android:onClick="reponseButton">
 
                         <TextView
+                            android:id="@+id/reponse3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="@font/poetsen_one"
-                            android:text="rep4"
+                            android:gravity="center"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -183,20 +198,23 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/card4"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
                         android:background="@color/grey"
-                        app:cardCornerRadius="20dp">
+                        app:cardCornerRadius="20dp"
+                        android:onClick="reponseButton">
 
                         <TextView
+                            android:id="@+id/reponse4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="@font/poetsen_one"
-                            android:text="rep5"
+                            android:gravity="center"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -205,20 +223,23 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/card5"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
                         android:background="@color/grey"
-                        app:cardCornerRadius="20dp">
+                        app:cardCornerRadius="20dp"
+                        android:onClick="reponseButton">
 
                         <TextView
+                            android:id="@+id/reponse5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="@font/poetsen_one"
-                            android:text="rep6"
+                            android:gravity="center"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -250,10 +271,11 @@
                             android:layout_marginStart="10dp"
                             android:layout_marginEnd="5dp"
                             android:fontFamily="@font/poetsen_one"
-                            android:text="Suivant"
+                            android:text="@string/suivant_button"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:onClick="suivantButton"/>
 
                         <ImageView
                             android:layout_width="wrap_content"

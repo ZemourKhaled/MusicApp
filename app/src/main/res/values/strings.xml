@@ -25,4 +25,9 @@
         <item>septième majeure</item>
         <item>octave</item>
     </string-array>
+    <string name="PlayButton">PlayButton</string>
+    <string name="question_exercice">Quel intervalle a été joué ?</string>
+    <string name="question">Question !</string>
+    <string name="suivant_button">Suivant</string>
+    <string name="arrow_image">arrow</string>
 </resources>
