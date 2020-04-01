@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CoursActivity"></activity>
+        <activity android:name=".SeparationDemiTon"></activity>
+        <activity android:name=".NomDesNotes" />
+        <activity android:name=".IntervalleNotes" />
+        <activity android:name=".CoursActivity" />
         <activity android:name=".ParametreActivity" />
         <activity android:name=".ExerciceActivity" />
         <activity android:name=".MainActivity">
