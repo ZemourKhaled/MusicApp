@@ -31,24 +31,27 @@
     <string name="arrow_image">arrow</string>
 
     <string name="separation_des_notes_ton_demi_ton">tons et demis-tons </string>
-    <string name="Nom_des_notes">Il existe sept noms de notes : Do, Ré, Mi, Fa, Sol, La et Si.
-        Il n\'en existe pas d\'autres. Ces notes peuvent étre modifiées (plus précisément la
-        hauteur du son) par les altérations telles que le # (dièse) ou le b (bémol).
-        Cette notation francaise des notes (Do, Ré, Mi, Fa, Sol, La et Si) a été initiée par le moine italien Guido d'Arezzo en s'inspirant d'un chant religieux latin : l'Hymne de Saint Jean-Baptiste.
-        La première syllabe de chaque vers correspond à une note et c'est pour cela que la note Do se dit également Ut (on a également la clef d'Ut).
-    </string>
+    <string name="Nom_des_notes">
+        Il existe sept noms de notes : Do, Ré, Mi, Fa, Sol, La et Si.
+        Il n\'existe pas d\'autres. Ces notes peuvent étre modifiées (plus précisément la
+        hauteur du son) par les altérations telles que le &#35; (dièse) ou le b (bémol).
+        Cette notation francaise des notes (Do, Ré, Mi, Fa, Sol, La et Si) a été initiée par le moine italien Guido d\'Arezzo en s\'inspirant d\'un chant religieux latin : l\'Hymne de Saint Jean-Baptiste.
+        La première syllabe de chaque vers correspond à une note et c\'est pour cela que la note Do se dit également Ut (on a également la clef d\'Ut).
+        </string>
     <string name="Noms_des_intervalles_musicaux"> Noms des intervalles musicaux </string>
-    <string name="intervalle">La définition d\'un intervalle en musique est extrémement simple :
-        il s\'agit de la distance qui sépare deux notes. Plutot fastoche à comprendre...
+    <string name="intervalle">
+        La définition d\'un intervalle en musique est extrémement simple :
+        il s\'agit de la distance qui sépare deux notes. Plutot fastoche à comprendre&#8230;
         Par exemple, il existe un intervalle entre un Do et Mi ou entre La et Ré.
 
 Pour rendre les choses plus simples,
         on a donné des noms à  ces intervalles
-        (intervalle de seconde, de tierce, de quinte...) que nous verrons par la suite.
+        (intervalle de seconde, de tierce, de quinte&#8230;) que nous verrons par la suite.
 
-Mais avant d'entrer dans le détail,
-        il faut bien avouer que cette notion, aussi facile Ã  comprendre, est à  la base de beaucoup de choses comprendre en théorie musicale. On peut citer par exemple la compréhension des accords, des gammes ou bien encore d'une mélodie.
-        La notion d\'intervalle sera donc présente aussi bien au niveau harmonique que mélodique.</string>
+Mais avant d\'entrer dans le détail,
+        il faut bien avouer que cette notion, aussi facile a comprendre, est à la base de beaucoup de choses comprendre en théorie musicale. On peut citer par exemple la compréhension des accords, des gammes ou bien encore d\'une mélodie.
+        La notion d\'intervalle sera donc présente aussi bien au niveau harmonique que mélodique.
+    </string>
     <string name="sources_notes">Source : https://www.musiclic.com/les_notes.asp</string>
     <string name="sources_intervalle">Source : https://www.musiclic.com/blog/definition-d-un-intervalle.asp</string>
     <string name="source_separation">https://fr.wikipedia.org/wiki/Demi-ton</string>

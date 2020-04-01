@@ -34,12 +34,14 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/text"
                         android:layout_width="match_parent"
                         android:layout_height="465dp"
                         android:text="@string/Nom_des_notes"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold"
+                        android:scrollbars="vertical"/>
 
                 </LinearLayout>
 
