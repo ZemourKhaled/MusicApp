@@ -25,8 +25,7 @@ public class ParametreActivity extends AppCompatActivity {
     //todo nettoyer code
     //todo revoir interface
     //todo ajouter bouton instrument
-    //todo charger pref séparées + fonction qui les appelle toutes
-    //todo cocher à l'avance les cases
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,13 +44,18 @@ public class ParametreActivity extends AppCompatActivity {
                 String selectedItem=((TextView)view).getText().toString();
                 if (selectedItems.contains(selectedItem)) {
                     selectedItems.remove(selectedItem);
-                    cpt_intervalles_sel--;
                 } else{
                     selectedItems.add(selectedItem);
-                    cpt_intervalles_sel++;
                 }
             }
         });
+        //checker la sélection d'intervalles en mémoire
+        for (int ind=0; ind<selection_intervalles.length; ind++){
+            if (selection_intervalles[ind]){
+                liste_intervalles.setItemChecked(ind,true);
+                selectedItems.add(noms_intervalles[ind]);
+            }
+        }
     }
 
 
@@ -73,7 +77,7 @@ public class ParametreActivity extends AppCompatActivity {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = preferences.edit();
         CharSequence text = getResources().getText(R.string.erreur_selection_parametres);
-        if (this.cpt_intervalles_sel < 2) {
+        if (selectedItems.size() < 2) {
             Toast toast = Toast.makeText(this,text,Toast.LENGTH_LONG);
             toast.show();
         }else {
